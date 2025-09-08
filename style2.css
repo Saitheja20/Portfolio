@@ -33,8 +33,8 @@
         /* background-size: 200% 100%; 
         background-position:left  bottom;
         transition: all .5s ease-in-out; */
-    background-color: black;
-    color: white;
+    /* background-color: black;
+    color: white; */
 }
 
 section {
@@ -105,7 +105,7 @@ footer table tr td {
 
 .btn:hover {
 
-    background: linear-gradient(to left, rgb(36, 234, 227) 70%, rgb(13, 110, 253) 30%);
+    /* background: linear-gradient(to left, rgb(36, 234, 227) 70%, rgb(13, 110, 253) 30%);
     background-size: 200% 100%;
     background-position: left bottom;
     transition: all .7s ease-out;
@@ -114,7 +114,7 @@ footer table tr td {
     background-size: 200% 100%;
     background-position: left bottom;
     transition: all .1s ease-out;
-    border: 1px double green;
+    border: 1px double green; */
 
 }
 
@@ -230,11 +230,11 @@ footer table tr td {
         background-size: 200% 100%;
         background-position: right bottom;
         transition:  .8s ease-out; */
-        background: linear-gradient(to right, rgb(13, 110, 253) 50%, black 50%);
+        /* background: linear-gradient(to right, rgb(13, 110, 253) 50%, black 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         color: white;
-        transition: all .5s ease-out;
+        transition: all .5s ease-out; */
 
     }
 
@@ -243,13 +243,13 @@ footer table tr td {
         text-align-last: center;
     }
 
-    .nav-item:hover {
+    /* .nav-item:hover {
         color: rgb(255, 0, 0);
         text-align: center;
         background-color: rgb(83, 238, 243);
         font-weight: bold;
         text-decoration: dotted;
-    }
+    } */
 
     .collapse {
         /* background-color: blue; */
@@ -310,25 +310,25 @@ footer table tr td {
         background-color: black;
         transform: skewX(-20deg);
     } */
-    .navbar-brand:hover {
+    /* .navbar-brand:hover {
 
-        /* color: rgb(0, 234, 255); */
-        /* transition: 0.95; */
-        /* background: linear-gradient(to left, rgb(235, 247, 10) 50%, rgb(13,110,253) 50%);
+        color: rgb(0, 234, 255);
+        transition: 0.95;
+        background: linear-gradient(to left, rgb(235, 247, 10) 50%, rgb(13,110,253) 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        transition:  .8s ease-out; */
-        /* 
+        transition:  .8s ease-out;
+        
         background: linear-gradient(to left, rgb(13,110,253) 50%, rgb(235, 247, 10) 50%);
         background-size: 200% 100%;
         background-position: right bottom;
-        transition: all .5s ease-out; */
+        transition: all .5s ease-out;
         background: linear-gradient(to right, rgb(13, 110, 253) 50%, black 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         color: white;
         transition: all .5s ease-out;
-    }
+    } */
 
     .navbar-nav {
         text-align: right;
@@ -342,9 +342,9 @@ footer table tr td {
     }
 
     .nav-item:hover {
-        text-transform: uppercase;
+        /* text-transform: uppercase;
         background-color: rgb(114, 233, 233);
-        text-decoration: none;
+        text-decoration: none; */
     }
 
     .navbarSupportedContent {

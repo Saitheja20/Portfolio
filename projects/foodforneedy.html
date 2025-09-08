@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saitheja Komalla Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="project.css">
+    <!-- For typed js code start-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- For typed js code end -->
+    <style>
+        
+      body {
+        background-color: black;
+      }
+
+        #AboutMe {
+            background: linear-gradient(169deg, #0f0c29, #281d97, #24243e) !important;
+            /* background: linear-gradient(145deg, #0f0c29, #302b63, #24243e) !important; */
+        }
+
+        .abt-para {
+            /* color: rgb(208 211 213 / 71%) !important; */
+            color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important
+        }
+        
+.name-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+        .name-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+    transform: scaleX(0);
+    animation: underlineExpand 1s ease-out 1s forwards;
+}
+
+
+/* project count?
+ */
+   /* Stats/Highlights */
+  .stats-container {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+  }
+
+  .stat-item {
+      text-align: center;
+  }
+
+  .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #667eea;
+      display: block;
+  }
+
+  .stat-label {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.25rem;
+  }
+
+.project-container {
+  color: #f0f0f0;
+  background: #121212;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.project-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.project-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.project-hero .tagline {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.project-hero .date {
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.card {
+  background: #1e1e1e;
+  padding: 1.8rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  color: #ffcc66;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  color: #ffaa33;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.7rem;
+}
+
+strong {
+  color: #ffdd88;
+}
+
+.wt{
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="assets/images/sklogo3.png" alt="Logo" width="35" height="40" class="d-inline-block align-text-top">
+            Saitheja Komalla
+            </a>
+
+            <ul class="nav justify-content-end">
+                 <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Projects</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!-- Responsive Bootstrap Navbar -->
+    <header>
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/sklogo3.png" alt="Logo" width="35" height="40"
+                        class="d-inline-block align-text-top">
+                    Saitheja Komalla
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo & Brand -->
+                <a class="navbar-brand" href="index4.html">
+                    <img src="assets/images/sklogowhite.png" alt="Logo" width="35" height="40"
+                        class="d-inline-block align-text-top" />
+                    <span class="text-light fw-bold">Saitheja Komalla</span>
+                </a>
+
+                <!-- Toggler button for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index4.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <main class="project-container">
+     <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+  <section class="project-hero">
+   
+                
+          
+    <h1>Food for Needy</h1>
+    <p class="tagline">A nonprofit app to collect leftover food and deliver it to people in need.</p>
+    <p class="date">May 3, 2025</p>
+  </section>
+
+  <section class="project-intro">
+    <p>
+      Food for Needy is an app I’m building to solve one simple but huge problem: every day, tons of good food gets wasted at events, restaurants, and homes, while so many people still go hungry.
+    </p>
+    <p>
+      It started with two goals:
+    </p>
+    <ul>
+      <li>I wanted to build something meaningful that directly helps society.</li>
+      <li>I wanted to combine tech with real-world impact, not just another commercial app.</li>
+    </ul>
+    <p>That’s how <strong>Food for Needy</strong> was born.</p>
+  </section>
+
+  <section class="project-idea card">
+    <h2>The Idea</h2>
+    <p class="wt">The idea is simple: instead of wasting leftover food, connect it with people who actually need it. Donors can register leftover food on the app, volunteers pick it up, and NGOs help distribute it.</p>
+    <h3>Here’s what I’ve built so far:</h3>
+    <ul>
+      <li><strong>Donor Flow</strong> <span class="wt"> – Donors can list leftover food, upload photos, and mark the quantity.</span></li>
+      <li><strong>Self-Donate Feature</strong><span class="wt">– Direct donation to NGOs or needy people.</span>  </li>
+      <li><strong>Volunteer Network</strong><span class="wt"> – Volunteers get notified about donations nearby and can deliver food.</span> </li>
+      <li><strong>NGO & Admin Role</strong><span class="wt"> – NGOs receive food, admins monitor logistics</span> .</li>
+      <li><strong>Photo & Recognition</strong><span class="wt">– Donors upload food photos and earn badges/certificates.</span>  </li>
+      <li><strong>Cross-Platform</strong><span class="wt"> – Built with Angular, works on both web and Android.</span> </li>
+    </ul>
+  </section>
+
+  <section class="project-learn card">
+    <h2>What I Learned</h2>
+    <p class="wt">
+      This project taught me a lot about designing apps that deal with <strong>real-world logistics</strong>. Unlike purely digital apps, Food for Needy needs to handle timing, delivery, location, and reliability.
+    </p>
+    <p class="wt">
+      I also learned the importance of <strong>clear workflows</strong>—making sure donors, volunteers, NGOs, and admins all know their roles. Another big lesson was <strong>scalability</strong>: how to support thousands of users without the system breaking.
+    </p>
+  </section>
+
+  <section class="project-next card">
+    <h2>What’s Next</h2>
+    <ul>
+      <li class="wt">🚚 Live tracking for volunteers</li>
+      <li  class="wt">🏆 Donor leaderboards, badges & certificates</li>
+      <li class="wt">📊 Financial transparency for NGOs</li>
+      <li class="wt">⚡ Emergency donation mode</li>
+      <li class="wt">📢 Better onboarding & awareness campaigns</li>
+    </ul>
+    <p  class="wt">
+      Food for Needy isn’t just a side project. My goal is to launch it as a <strong>real nonprofit platform</strong> that reduces food waste and directly feeds more people. Every meal saved is a life touched, and I want this app to make that easier at scale.
+    </p>
+  </section>
+    </div>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-3 mb-md-0">
+                        &copy; 2025 Saitheja Komalla. Crafted with ❤️
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-center text-md-end">
+                        <a href="https://www.linkedin.com/in/saitheja-komalla-4a02991b0/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Saitheja20/" target="_blank" rel="noopener"
+                            aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100007743525444" target="_blank" rel="noopener"
+                            aria-label="Facebook Profile">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_i.teja_/" target="_blank" rel="noopener"
+                            aria-label="Instagram Profile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:saitheja@example.com" aria-label="Email Contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="
+        display: none;
+        z-index: 1000;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      " aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="Javascript.js?v=2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // Custom animation for skill cards
+        const observerCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe all skill cards
+        document.querySelectorAll('.fade-in-up').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Animate progress bars when skills section is visible
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.width = bar.style.width || '0%';
+                        }, index * 100);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        skillsObserver.observe(document.getElementById('skills'));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
