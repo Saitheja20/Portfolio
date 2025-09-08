@@ -1,551 +1,1070 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Saitheja Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saitheja Komalla - Full Stack Web Developer specializing in HTML, CSS, JavaScript, React, Java, PHP, and Spring Boot. Portfolio showcasing responsive web applications and innovative projects.">
+    <meta name="keywords" content="Saitheja Komalla, Full Stack Developer, Web Developer, React Developer, JavaScript Developer, Front-end Developer, Back-end Developer, Portfolio, HTML, CSS, Bootstrap, Java, PHP, Spring Boot">
+    <meta name="author" content="Saitheja Komalla">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Saitheja Komalla - Full Stack Web Developer">
+    <meta property="og:description" content="Professional portfolio of Saitheja Komalla, showcasing innovative web development projects and technical expertise.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saitheja20.github.io/">
+    <meta property="og:image" content="https://saitheja20.github.io/imgimp.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Saitheja Komalla - Full Stack Web Developer">
+    <meta name="twitter:description" content="Professional portfolio showcasing innovative web development projects and technical expertise.">
+    <meta name="twitter:image" content="https://saitheja20.github.io/imgimp.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Saitheja Komalla",
+        "jobTitle": "Full Stack Web Developer",
+        "description": "Experienced web developer specializing in modern web technologies including React, JavaScript, Java, and PHP",
+        "url": "https://saitheja20.github.io/",
+        "sameAs": [
+            "https://www.linkedin.com/in/saitheja-komalla-4a02991b0/",
+            "https://github.com/Saitheja20/",
+            "https://www.facebook.com/profile.php?id=100007743525444",
+            "https://www.instagram.com/_i.teja_/"
+        ],
+        "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Java", "PHP", "Spring Boot", "Bootstrap", "Git", "GitHub", "SQL"],
+        "alumniOf": "Computer Science",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance Web Developer"
+        }
+    }
+    </script>
+    
+    <title>Saitheja Komalla - Full Stack Web Developer | Portfolio</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"></noscript>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa3nKaozSLULNd2L5c7nqFqO4fNqhzJDpRDQUEz5hqF8G9VGpOjMf3jQd6p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
 
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
 
-<!-- For typed js code start-->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<!-- For typed js code end -->
-<link rel="stylesheet" href="style.css?v=2">
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient);
+            border-radius: 4px;
+        }
+
+        /* Navigation */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(37, 99, 235, 0.95) !important;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #fff, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            color: rgba(255,255,255,0.9) !important;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color) !important;
+            transform: translateY(-2px);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after {
+            width: 80%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.05)" points="0,1000 1000,0 1000,1000"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .lead {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+        }
+
+        .typed-cursor {
+            color: var(--accent-color);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            border-radius: 50%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transition: var(--transition);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        /* Skills Section */
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            height: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--primary-color);
+        }
+
+        .skill-card img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            transition: var(--transition);
+            margin-bottom: 1rem;
+        }
+
+        .skill-card:hover img {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .skill-card h5 {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Projects Section */
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-carousel img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h3 {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-light);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-control {
+            border: 2px solid transparent;
+            background: var(--bg-light);
+            border-radius: 10px;
+            padding: 12px 16px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+            background: white;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            background: var(--gradient);
+            color: white;
+            margin: 0 10px;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .skill-card {
+                margin-bottom: 1rem;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+            
+            .navbar-nav {
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .lead {
+                font-size: 1rem;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Performance Optimizations */
+        img {
+            max-width: 100%;
+            height: auto;
+            loading: lazy;
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            border: 0 !important;
+        }
+
+        /* Focus indicators */
+        .btn:focus,
+        .form-control:focus,
+        .nav-link:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+    </style>
 </head>
-    <body>
-        <header>
-          <nav class="navbar navbar-expand-lg fixed-top bg-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Saitheja Komalla</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#AboutMe">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#skills">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#projects">projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#certificate">Certificates</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        
-        </header>
-        <section >
-
-          <div class="container">
-            <div class="mainbanner">
-            <div class="row">
-              
-              <div class="col">
-                <!-- <img src="mainbanner.jpg" alt="codebanner" class="responsive"> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        </section>
-<section>
-  <!-- <h1 style="text-align: center;text-decoration: underline;color: purple;">About Me</h1> -->
-       
-  <div id="AboutMe">
-       
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <div class="row abt">
-              
-                <div class="col-xs-12 col-lg-6 ">
-                    <div class="center">
-                    <h1 ><b class="red">Saitheja Komalla</b></h1>
-                    <h3 class="typedjs">I'm <span class="element inline"></span> </h3>
-                    <br>
-                    
-                   <p style="justify-content: center;">This is my official Portfolio website to showcase my all works related to web development and other skills</p>
-                </div>
+            <a class="navbar-brand" href="#home" aria-label="Saitheja Komalla - Home">Saitheja Komalla</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-          
-                <div class="col-xs-12 col-lg-6 ">
-                  <div class="center">
-                     <!-- <div class="img-fluid img "> -->
-    <div class="text-center">
-                        <img class="img" src="imgimp.jpg" alt="Saitheja Komalla"class="rotate-image stop-rotation"/>
-                   
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1>Hi, I'm <span class="text-warning">Saitheja Komalla</span></h1>
+                        <p class="lead">I'm <span class="element"></span></p>
+                        <p class="mb-4">Passionate Full Stack Developer crafting innovative web solutions with modern technologies. Transforming ideas into digital reality.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                        </div>
                     </div>
                 </div>
-              </div>
-            </div>
-            <!-- <div class="btn">
-            <div class=" container">
-            <div class="row">
-                <div class="col">
-                    <div class="text-center">
-                    <button class="bg-primary">Know More</button>
-                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image text-center floating">
+                        <img src="imgimp.jpg" alt="Saitheja Komalla - Full Stack Web Developer" 
+                             class="img-fluid" style="max-width: 400px;" 
+                             width="400" height="400">
+                    </div>
                 </div>
             </div>
-            </div>
-        </div> -->
         </div>
-    </div>
     </section>
-    <!-- SKills Section start-->
-<section >
-<div class="skills-wrapper" id="skills">
-<div class="container">
-  <div class="row">
-    <div class="col">
-<div class="menus">
-  <h2>Skills</h2>
-</div>
-  </div>
-</div>
-<div class="row" style="text-align: center;margin-top: 1em;">
-  <div class="col">
-    <div class="p">I have experience with a wide variety of programming languages. For website development, I use HTML, CSS, Bootstrap, and JavaScript. When working on prototypes or hobby projects, I fall back on Java. Java's versatility and object-oriented nature make it well-suited for various applications. If you have any questions or need help with any of these languages, feel free to ask! Happy coding!</div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-</div>
-<div class="row skew" style="margin-left: 3.5em;margin-top: 1em;">
-  <div class="col-md-3 col-xs-6 ">
-    <div class="python">
-        <h5><strong><img src="HTML5.png" width="57px" height="57px" class="rotate-image"><br><br>  &nbsp;HTML5</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="csharp">
-        <h5><strong><img src="css.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;CSS3</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="java">
-        <h5><strong><img src="bootstrap.png"  width="57px" height="57px" class="rotate-image"><br><br> BOOTSTRAP</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="c">
-        <h5><strong><img src="js.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;JavaScript</strong></h5>  		
-    </div>
-  </div>
-</div>
-<br><br>
 
-<div class="row skew" style="margin-left: 3.5em;">
-  <div class="col-md-3 col-xs-6 ">
-    <div class="sql">
-        <h5><strong><img src="git.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Git</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6">
-    <div class="html">
-        <h5><strong><img src="github.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;GitHub</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="css">
-        <h5><strong><img src="react.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;reactJs</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="bootstrap">
-        <h5><strong><img src="sql.jpg"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SQL</strong></h5>  		
-    </div>
-  </div>
-</div>
-<br><br>
-<div class="row skew" style="margin-left: 3.5em;">
-  <div class="col-md-3 col-xs-6 ">
-    <div class="bootstrap">
-        <h5><strong><img src="php.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;PHP</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="sql">
-        <h5><strong><img src="java.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;Java</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="html">
-        <h5><strong><img src="springboot.png"  width="57px" height="57px" class="rotate-image"><br><br> SpringBoot</strong></h5>  		
-    </div>
-  </div>
-  <div class="col-md-3 col-xs-6 ">
-    <div class="css">
-        <h5><strong><img src="c.png"  width="57px" height="57px" class="rotate-image"><br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C</strong></h5>  		
-    </div>
-  </div>
-  
-</div>
-<br>
-<br>
-</div>
-</div>
-
-</section>
-    <!-- skills section end -->
-    <!--|||||||||||||||||||||||||| Project section started||||||||||||||||||||| -->
-<section id="projects">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-    <div class="menus">
-      <h2>Projects</h2>
-    </div>
-      </div>
-    </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-6 col-xs-12 col-md-6">
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="projectimages/Emd/Home1.png" alt="First slide" width="100%" height="auto">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p class="lead">Passionate developer dedicated to creating exceptional digital experiences</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <div class="text-center">
+                        <p class="fs-5">Welcome to my digital portfolio! I'm a dedicated Full Stack Web Developer with expertise in modern web technologies. My journey in web development is driven by a passion for creating innovative, user-friendly applications that solve real-world problems.</p>
+                        <p>With proficiency in both front-end and back-end technologies, I bring ideas to life through clean code, responsive design, and seamless user experiences.</p>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="projectimages/Emd/products.png" alt="Second slide" width="100%" height="auto">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="projectimages/Emd/services.png" alt="Third slide" width="100%" height="auto">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="projectimages/Emd/contact.png" alt="fourth slide" width="100%" height="auto">
-              </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-        <h1 style="text-align: center;">Ellandakunta Milk Dairy</h1>
+    </section>
 
-      <a href="https://saitheja20.github.io/Emd/" target="_blank"> <button  class="text-center btn" >View Full</button></a> 
-    </div>
-    <div class="col-xl-6 col-xs-12 col-md-6">
-      <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="projectimages/MeetNTreet/home.png" alt="First slide" width="100%" height="auto">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="projectimages/MeetNTreet/menu.png" alt="Second slide" width="100%" height="auto">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="projectimages/MeetNTreet/banner.png" alt="Third slide" width="100%" height="auto">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="projectimages/MeetNTreet/reservation.png" alt="fourth slide" width="100%" height="auto">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="projectimages/MeetNTreet/safety.png" alt="fourth slide" width="100%" height="auto">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="projectimages/MeetNTreet/contactus.png" alt="fourth slide" width="100%" height="auto">
-      </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <h1 style="text-align: center;">MeetNTreet Restro</h1>
-
-    <a href="https://saitheja20.github.io/restro/" target="_blank"> <button  class="center1 btn" >View Full</button></a>
-</div>
-        </div>
-        <!-- ||||||||||||||||||2nd row peojects||||||||||||||||||||||||||||||| -->
-        <div class="row">
-          <div class="col-xl-6 col-xs-12 col-md-6">
-            <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                  <div class="carousel-item active">
-                      <img class="d-block w-100" src="projectimages/godaddydyn/home.png" alt="First slide" width="100%" height="auto">
-                  </div>
-                  <div class="carousel-item">
-                      <img class="d-block w-100" src="projectimages/godaddydyn/vgbir.png" alt="Second slide" width="100%" height="auto">
-                  </div>
-                  <div class="carousel-item">
-                      <img class="d-block w-100" src="projectimages/godaddydyn/page3.png" alt="Third slide" width="100%" height="auto">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="projectimages/godaddydyn/page4.png" alt="fourth slide" width="100%" height="auto">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="projectimages/godaddydyn/page5.png" alt="fifth slide" width="100%" height="auto">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="projectimages/godaddydyn/page6.png" alt="sixth slide" width="100%" height="auto">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="projectimages/godaddydyn/page7.png" alt="seven slide" width="100%" height="auto">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="projectimages/godaddydyn/page8.png" alt="eight slide" width="100%" height="auto">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="projectimages/godaddydyn/order.png" alt="nine slide" width="100%" height="auto">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="projectimages/godaddydyn/ordercompleted.png" alt="tenth slide" width="100%" height="auto">
-    </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-          </div>
-          <h1 style="text-align: center;">SS Restaurant</h1>
-  
-        <a href="https://saitheja20.github.io/dynamicwebproject/" target="_blank"> <button  class="text-center btn" >View Full</button></a> 
-      </div>
-      <!-- |||||||||||||||||||||||2ndrow 2nd col||||||||||||||||||||||| -->
-      <div class="col-xl-6 col-xs-12 col-md-6">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img class="d-block w-100" src="projectimages/rpsgame/homegame.png" alt="First slide" width="100%" height="auto">
-              </div>
-              <div class="carousel-item">
-                  <img class="d-block w-100" src="projectimages/rpsgame/gamepage.png" alt="Second slide" width="100%" height="auto">
-              </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
-              <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-          </a>
-      </div>
-      <h1 style="text-align: center;">Rock Paper Scissors Game</h1>
-  
-      <a href="https://saitheja20.github.io/rock-paper-scissors/" target="_blank"> <button  class="text-center btn" >View Full</button></a>
-  </div>
-          </div>
-      </div>
-  </section>
-  <!-- ||||||||||||||||||||||||||||||||||||Project section ends |||||||||||||||||||||||||||||||||-->
-  <!-- ||||||||||||||||||||||||||||||||||||certificate section stars |||||||||||||||||||||||||||||||||-->
-  <section id="certificate">       
-    <div class="container">
-      <div class="row">
-        <div class="col">
-    <div class="menus">
-      <h2>Certificates</h2>
-    </div>
-      </div>
-    </div>
-    </div>  
-  
-  
-
-<div class="container">
-<div class="row center">
-  <div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
- 
-    <img src="certificates/Learn Java_page-0001.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto"">
- 
-  <!-- <div class="cerdescription"><p>Learn Java Certificate By CodeChef</p></div> -->
-</div>
-</div>
-<br><br>
-<!-- |||||||||||||||||||||||| -->
-<div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
-  
-    <img src="certificates/reactbootcamp.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto"">
-  
-  <!-- <div class="cerdescription"><p>React bootcamp By devtown</p>
-  </div> -->
-</div>
-</div>
-
-<br><br>
-<div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
-  
-    <img src="certificates/reactbootcampbymicrosoft.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto"">
-  
-  <!-- <div class="cerdescription"><p>React bootcamp by microsoft</p>
-  </div> -->
-</div>
-</div>
-
-<div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
- 
-    <img src="certificates/GodaddyCertificate.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto">
- 
-  <!-- <div class="cerdescription"><p>Godday Certified web developer</p>
-  </div> -->
-</div>
-</div>
-
-<br><br>
-<div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
-  
-    <img src="certificates/oraclejava.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto"">
-  
-  <!-- <div class="cerdescription"><p>React bootcamp by microsoft</p>
-  </div> -->
-</div>
-</div>
-
-
-<br><br>
-<div class="col-xl-4 col-xs-12 col-md-4">
-<div class="cerimg">
-  
-    <img src="certificates/Hackthon.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto"">
-  
-  <!-- <div class="cerdescription"><p>React bootcamp by microsoft</p>
-  </div> -->
-</div>
-</div>
-
-<br><br>
-</div>
-</div>
-</div>
-<a href="certificates.html"><input class="btn btn-dark" placeholder="VieMore" /></a>
-<hr>
-</section>
-<hr>
-  <!-- ||||||||||||||||||||||||||||||||||||certificate section ends |||||||||||||||||||||||||||||||||-->
-<!-- |||||||||||||||||||||||||||||||||||||||||||| contact us starts|||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-    <div class="menus">
-      <h2>Contact Me</h2>
-    </div>
-      </div>
-    </div>
-    </div>  
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="contact-wrapper" id="contact">
-        <br><br><br>
-        <h3 class="bottomborder">REACH OUT TO ME !</h3>
-        <div class="contact-hr"></div>
-        <br><br>
-  
-        <div class="form">
-        <form name="google-sheet" method="post" action="https://script.google.com/macros/s/AKfycbxH5cd7DgDUwFkzitI0nVJIDuvXgSJ6KstO6rRqKdfRIGMa398iwExjjmzXRgD42GKwWA/exec">
-            <div class="input-container">
-              <i class="fa fa-user icon"></i>
-              <label>Name </label>
-              <br>
-              <input class="input-field" type="text" placeholder="Enter your Name" name="name" required id="name">
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+                <p class="lead">Technologies and tools I work with to build amazing applications</p>
             </div>
             
-            <label >Email </label>
-            <div class="input-container">
-              <i class="fa fa-envelope icon"></i>
-              <input class="input-field" type="text" placeholder="Your Email" name="email" required id="mail">
-              </div>
-            
-            <label >Message </label>
-          <div class="input-container">
-              <i class="fa fa-comment icon"></i>
-              <textarea class="input-field" style="height: 7em; min-height: 4em;" type="textarea" placeholder="Your Message..." name="message" required id="msg"></textarea>
-          </div> 
-          <br>
-          <div class="submit-btn">
-            <input type="submit" value="Send" class="btn btn-primary">
-            <!-- <button type="submit" value="Send" class="btn btn-info">Send</button> -->
+            <div class="row g-4">
+                <!-- Frontend Skills -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-card">
+                        <img src="HTML5.png" alt="HTML5 Logo" width="60" height="60">
+                        <h5>HTML5</h5>
+                        <p class="text-muted">Semantic markup & modern web standards</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-card">
+                        <img src="css.png" alt="CSS3 Logo" width="60" height="60">
+                        <h5>CSS3</h5>
+                        <p class="text-muted">Modern styling & responsive design</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-card">
+                        <img src="js.png" alt="JavaScript Logo" width="60" height="60">
+                        <h5>JavaScript</h5>
+                        <p class="text-muted">Dynamic & interactive web applications</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-card">
+                        <img src="react.png" alt="React Logo" width="60" height="60">
+                        <h5>React</h5>
+                        <p class="text-muted">Component-based UI development</p>
+                    </div>
+                </div>
+                
+                <!-- Backend & Tools -->
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-card">
+                        <img src="java.png" alt="Java Logo" width="60" height="60">
+                        <h5>Java</h5>
+                        <p class="text-muted">Object-oriented programming</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-card">
+                        <img src="springboot.png" alt="Spring Boot Logo" width="60" height="60">
+                        <h5>Spring Boot</h5>
+                        <p class="text-muted">Enterprise Java applications</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="skill-card">
+                        <img src="php.png" alt="PHP Logo" width="60" height="60">
+                        <h5>PHP</h5>
+                        <p class="text-muted">Server-side web development</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="skill-card">
+                        <img src="sql.jpg" alt="SQL Logo" width="60" height="60">
+                        <h5>SQL</h5>
+                        <p class="text-muted">Database design & management</p>
+                    </div>
+                </div>
             </div>
-        </form>
-        <br><br>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-
-
-
-  </section>
-<!-- |||||||||||||||||||||||||||||||||||||||||||| contact us ends|||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||footer ||||||||||||||||||||||||-->
-<footer>
-<div class="container">
-  <div class="row">
-    <div class="col">
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <p>Connect with Me:&nbsp;&nbsp;&nbsp;</p>
-                    </td>
-                    <td><a href="https://www.linkedin.com/in/saitheja-komalla-4a02991b0/" target="_blank"><img  class="td" src="linkedin.png" alt="linkedin logo" width="120" height="50"/></a></td>
-                    <td><a href="https://www.facebook.com/profile.php?id=100007743525444" target="_blank"><img  class="td" src="facebook.png" alt="facebook loog"  width="50" height="50"/></a></td>
-                    <td><a href="https://www.instagram.com/_i.teja_/" target="_blank"><img class="td" src="instagram.png" alt="instagramloog" width="50" height="50"/></a></td>
-                    <td><a href="https://github.com/Saitheja20/" target="_blank"><img  class="td" src="github.png" alt="github logo" width="50" height="50"/></a></td>
-                    <td><a href="https://www.google.com/search?q=saitheja+komalla&rlz=1C1CHBF_enIN1008IN1008&oq=saitheja+komalla&aqs=chrome.0.69i59l2j69i60l2j69i61j69i65l3.3432j1j7&sourceid=chrome&ie=UTF-8" target="_blank"><img  class="td" src="google.png" alt="google logo" width="50" height="50"/></a></td>
-                </tr>
-        
-        
-            </table>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Featured Projects</h2>
+                <p class="lead">Showcasing my latest work and innovative solutions</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div id="carousel1" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="projectimages/Emd/Home1.png" alt="Ellandakunta Milk Dairy Homepage" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/Emd/products.png" alt="Ellandakunta Milk Dairy Products" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/Emd/services.png" alt="Ellandakunta Milk Dairy Services" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Ellandakunta Milk Dairy</h3>
+                            <p>Modern responsive website for dairy business with product showcase and service information.</p>
+                            <a href="https://saitheja20.github.io/Emd/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div id="carousel2" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="projectimages/MeetNTreet/home.png" alt="MeetNTreet Restaurant Homepage" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/MeetNTreet/menu.png" alt="MeetNTreet Restaurant Menu" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/MeetNTreet/reservation.png" alt="MeetNTreet Restaurant Reservations" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>MeetNTreet Restaurant</h3>
+                            <p>Interactive restaurant website with online menu, reservations, and safety protocols.</p>
+                            <a href="https://saitheja20.github.io/restro/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div id="carousel3" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="projectimages/godaddydyn/home.png" alt="SS Restaurant Homepage" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/godaddydyn/order.png" alt="SS Restaurant Order System" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>SS Restaurant</h3>
+                            <p>Dynamic restaurant website with online ordering system and interactive features.</p>
+                            <a href="https://saitheja20.github.io/dynamicwebproject/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div id="carousel4" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="projectimages/rpsgame/homegame.png" alt="Rock Paper Scissors Game Homepage" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="projectimages/rpsgame/gamepage.png" alt="Rock Paper Scissors Gameplay" class="d-block w-100">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Rock Paper Scissors Game</h3>
+                            <p>Interactive JavaScript game with modern UI design and smooth animations.</p>
+                            <a href="https://saitheja20.github.io/rock-paper-scissors/" target="_blank" rel="noopener" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>Play Game
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p> Made with ❤️ by Saitheja Komalla</p>
-         
-    </div>
-  </div>
-</div>
+    </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="section bg-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Certifications</h2>
+                <p class="lead">Professional certifications and achievements</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-card h-100">
+                        <img src="certificates/Learn Java_page-0001.jpg" alt="CodeChef Java Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>Learn Java Certificate</h5>
+                        <p class="text-muted">CodeChef</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-card h-100">
+                        <img src="certificates/reactbootcamp.jpg" alt="React Bootcamp Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>React Bootcamp</h5>
+                        <p class="text-muted">DevTown</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-card h-100">
+                        <img src="certificates/reactbootcampbymicrosoft.jpg" alt="Microsoft React Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>React Bootcamp</h5>
+                        <p class="text-muted">Microsoft</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-card h-100">
+                        <img src="certificates/GodaddyCertificate.jpg" alt="GoDaddy Web Developer Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>Certified Web Developer</h5>
+                        <p class="text-muted">GoDaddy</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="skill-card h-100">
+                        <img src="certificates/oraclejava.jpg" alt="Oracle Java Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>Java Certification</h5>
+                        <p class="text-muted">Oracle</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="skill-card h-100">
+                        <img src="certificates/Hackthon.jpg" alt="Hackathon Certificate" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+                        <h5>Hackathon Winner</h5>
+                        <p class="text-muted">Innovation Challenge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p class="lead">Ready to bring your ideas to life? Let's collaborate!</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                        <form name="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbxH5cd7DgDUwFkzitI0nVJIDuvXgSJ6KstO6rRqKdfRIGMa398iwExjjmzXRgD42GKwWA/exec">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Project Discussion">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-</footer>
-<!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||footer ||||||||||||||||||||||||-->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-3 mb-md-0">&copy; 2025 Saitheja Komalla. Crafted with ❤️</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-center text-md-end">
+                        <a href="https://www.linkedin.com/in/saitheja-komalla-4a02991b0/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Saitheja20/" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100007743525444" target="_blank" rel="noopener" aria-label="Facebook Profile">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_i.teja_/" target="_blank" rel="noopener" aria-label="Instagram Profile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:saitheja@example.com" aria-label="Email Contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
-      <!--|||||||||||||||||||||||||| Project section started||||||||||||||||||||| -->
- <script src="Javascript.js?v=2"></script>
-    </body>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="display: none; z-index: 1000; border-radius: 50%; width: 50px; height: 50px;" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize Typed.js
+        var typed = new Typed('.element', {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer", 
+                "Front-end Developer",
+                "Back-end Developer",
+                "React Developer",
+                "Problem Solver"
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.pageYOffset > 50) {
+                navbar.style.background = 'rgba(37, 99, 235, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(37, 99, 235, 0.95)';
+            }
+        });
+
+        // Form submission handling
+        const form = document.querySelector('form[name="contact-form"]');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            // Submit form data
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Success feedback
+                    submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
+                    submitBtn.classList.remove('btn-primary');
+                    submitBtn.classList.add('btn-success');
+                    form.reset();
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.classList.remove('btn-success');
+                        submitBtn.classList.add('btn-primary');
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                // Error feedback
+                submitBtn.innerHTML = '<i class="fas fa-times me-2"></i>Error! Try Again';
+                submitBtn.classList.remove('btn-primary');
+                submitBtn.classList.add('btn-danger');
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.classList.remove('btn-danger');
+                    submitBtn.classList.add('btn-primary');
+                    submitBtn.disabled = false;
+                }, 3000);
+            });
+        });
+
+        // Preloader (if needed)
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Performance optimization - lazy load images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+
+        // Active navigation link highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+</body>
 </html>
